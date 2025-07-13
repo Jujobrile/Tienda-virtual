@@ -3,11 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Adopción mascotas Cali</title>
 </head>
 <body>
-    <header>
-        <h1>Mi vienda</h1>
+    <header class="header">
+        <section class="header_container">
+            <div class="header_container_content">
+                <h1>Adopción máscotas en Cali</h1>
+                <p>En este sitio podrás encontrar no solo una máscota, sino un nuevo
+                    miembro peludito para tu familia... ¿Qué esperas para darle un hogar
+                    y mucho amor a alguien que lo necesita? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Natus illum est exercitationem quasi assumenda cumque? 
+                    Optio dignissimos voluptatum architecto totam et deserunt 
+                    minus perferendis, ipsa quia molestiae omnis? Et, consequuntur?
+                </p>
+                <button class="header_container_content_call-to-action">
+                    <strong>
+                        ¡Adopta la tuya ya!
+                    </strong>
+                </button>
+            </div>
+        </section>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#dog-adoption">Adopta un perrito</a></li>
+            <li><a href="#cat-adoption">Adopa un gatito</a></li>
+            <li><a href="#about">Acerca de nosotros</a></li>
+            <li><a href="#contact">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section id="home">
+            <h2>
+            Mascotas adoptadas en Cali
+            </h2>
+            <article class="main-content_adoption-section">
+                <div class="img-container">
+                    <img src="./src/img/dog-adoption.jpg" alt="">
+                </div>
+                <p>
+                     más de 400 perritos han encontrado un hogar dispuesto a darles mucho amor y una nueva oportunidad. ¿Qué esperas para ser el siguiente?
+                </p>
+            </article>
+            <article class="main-content_adoption-section">
+                <p>
+                    más de 650 gatitos han encontrado un hogar y una familia que quiere consentirlos. Muchos más esperan por ti para cambiar su vida.
+                </p>
+                <div class="img-container">
+                    <img src="./src/img/cat-adoption.jpg" alt="">
+                </div>
+            </article>
+        </section>
+        <section class="main-content_dog-adoption" id="dog-adoption">
+            <h2>Adoptar perritos</h2>
+        </section>
+        <section class="main-content_cat-adopcion" id="cat-adoption">
+            <h2>Adoptar gatitos</h2>
+        </section>  
+         <section class="main-content_about" id="about">
+            <h2>Acerca de</h2>
+        </section>  
+        <section class="main-content_contact-form" id="contact">
+            <h2>Contactanos</h2>
+            <form action="#" method="post">
+                <p>Escribenos lo que necesites y te responderemos a la mayor brevedad posible:</p>                           
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Adopción mascotas Cali</h3>
+        <ul>
+            <li>Dato 1</li>
+            <li>Dato 2</li>
+            <li>Dato 3</li>
+        </ul>
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+    </footer>
 </body>
 </html>

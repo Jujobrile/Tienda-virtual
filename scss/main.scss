@@ -1,0 +1,87 @@
+/*variables globales*/
+$primary-color: #FFFDFE;
+$secondary-color: #FFDAC6;
+$nav-footer-color: #1F2130;
+$font-stack: "IBM Plex Sans", sans-serif;
+$shadow-style: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+
+/*mixins*/
+@mixin initial-setting{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    @include initial-setting;
+}
+
+body{
+    font-family: $font-stack;
+    height: 100vh;
+    background-color: $primary-color;
+}
+
+.header{
+    background-image: url("../src/img/background.jpg");
+    background-size: cover;
+    height: 28rem;
+    .header_container{
+       display: flex; 
+       justify-content: flex-end;
+       padding: 2rem;
+       height: 100%;
+       .header_container_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        width: 30rem;
+        color:$primary-color;
+        h1{
+            font-size: 2.3rem;
+        }
+        .header_container_content_call-to-action{
+            $background: #FA9500;
+            width: 60%;
+            padding: 1rem 2rem;
+            background-color: $background;
+            border: none;
+            border-radius: 50px;
+            align-self: center;
+            margin-top: 4rem;
+            box-shadow: $shadow-style;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+       }
+    }
+}
+
+.main-content{
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+nav{
+    background-color: $nav-footer-color;
+    padding: 0.713rem 0;
+    ul{
+        margin:0;
+        padding:1rem;
+        padding-left: 1.5rem;
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        a{
+            color: white;
+        }
+    }
+}
+
+footer{
+   background-color: $nav-footer-color;
+   height: 3rem;
+   color: $primary-color;
+}
