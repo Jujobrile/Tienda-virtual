@@ -1,6 +1,7 @@
 /*variables globales*/
 $primary-color: #FFFDFE;
 $secondary-color: #FFDAC6;
+$title-style-color: #FD76C1;
 $nav-footer-color: #1F2130;
 $font-stack: "IBM Plex Sans", sans-serif;
 $shadow-style: 0 0 5px rgba($color: #000000, $alpha: 0.4);
@@ -62,6 +63,39 @@ body{
     height: 100%;
     width: 100%;
     padding: 1.5rem;
+    .main-content_container{
+        display: flex;
+        gap: 5rem;
+        margin: 2rem 0;
+        justify-content: space-between;
+        .main-content_adoption-section{
+            background-color: white;
+           box-shadow: $shadow-style;
+           padding: 2rem;
+           border-radius: 8px;
+           width: 50%;
+           align-items: center;
+           display: flex;
+           gap: 3rem;
+           justify-content: flex-start;
+           .img-container{
+            width: 120%;
+                img{
+                    width: 100%;
+                    height: 17rem;
+                }
+           }
+           .text-content{
+            align-self: flex-start;
+            max-width: 50%;
+            h3{
+                margin-bottom: 3rem;
+                color: $title-style-color;
+                font-size: 2rem;
+            }
+           }
+        }
+    }
 }
 
 nav{
