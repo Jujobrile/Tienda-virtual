@@ -5,6 +5,9 @@ $title-style-color: #FD76C1;
 $nav-footer-color: #1F2130;
 $font-stack: "IBM Plex Sans", sans-serif;
 $shadow-style: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+$main-title-size: 2.3rem;
+$second-title-size: 2rem;
+$third-title-size: 1.8rem;
 
 /*mixins*/
 @mixin initial-setting{
@@ -12,6 +15,8 @@ $shadow-style: 0 0 5px rgba($color: #000000, $alpha: 0.4);
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Estilos del archivo*/
 
 *{
     @include initial-setting;
@@ -23,7 +28,7 @@ body{
     background-color: $primary-color;
 }
 
-.header{
+header{
     background-image: url("../src/img/background.jpg");
     background-size: cover;
     height: 28rem;
@@ -40,7 +45,7 @@ body{
         width: 30rem;
         color:$primary-color;
         h1{
-            font-size: 2.3rem;
+            font-size: $main-title-size;
         }
         .header_container_content_call-to-action{
             $background: #FA9500;
@@ -59,10 +64,14 @@ body{
     }
 }
 
-.main-content{
+main{
     height: 100%;
     width: 100%;
     padding: 1.5rem;
+    h2{
+        font-size: $second-title-size;
+        color: $title-style-color;
+    }
     .main-content_container{
         display: flex;
         gap: 5rem;
@@ -86,12 +95,12 @@ body{
                 }
            }
            .text-content{
-            align-self: flex-start;
+            align-content: flex-start;
             max-width: 50%;
             h3{
-                margin-bottom: 3rem;
-                color: $title-style-color;
-                font-size: 2rem;
+                margin-bottom: 1.6rem;
+                color: $nav-footer-color;
+                font-size: $third-title-size;
             }
            }
         }
